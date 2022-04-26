@@ -1,0 +1,13 @@
+.logo {
+  svg {
+    height: 48px;
+    width: 48px;
+    .logobg {
+      transition: fill 0.3s;
+    }
+    &:hover .logobg {
+      fill: #0000ff;
+      transition: fill 0.3s;
+    }
+  }
+}
