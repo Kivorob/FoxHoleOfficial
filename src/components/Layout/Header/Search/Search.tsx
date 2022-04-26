@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Search.module.scss';
-import Logo from "./Logo/Logo";
+import Logo from '../../../Logo/Logo';
 import SearchBar from "./SearchBar/SearchBar";
 import Busket from "./Busket/Busket";
 import Contact from "./Contact/Contact";

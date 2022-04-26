@@ -1,13 +1,13 @@
 import React from 'react';
 import style from "./Logo.module.scss"
 
-const logo = require("../../../../img/Logo.png")
+const logo = require("../../img/Logo.png")
 
 const Logo = () => {
     return (
-        <div className={style.logo}>
+        <a className={style.logo} href="#">
             <img src={logo} alt="Logo"/>
-        </div>
+        </a>
     );
 };
 

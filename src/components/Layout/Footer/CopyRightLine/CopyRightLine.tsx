@@ -1,6 +1,6 @@
 import React from 'react';
 import style from "./CopyRightLine.module.scss"
-import Logo from "../Logo/Logo";
+import Logo from "../../../Logo/Logo";
 import VKIcon from "../../../Icons/VKIcon/VKIcon";
 
 const CopyRightLine = () => {

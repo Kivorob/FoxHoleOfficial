@@ -1,0 +1,11 @@
+.logo {
+  display: block;
+  cursor: pointer;
+  &:hover img {
+
+  }
+  img {
+    width: 160px;
+    height: 80px;
+  }
+}
