@@ -2,6 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import createUser from "./api/createUser";
+import loginUser from "./api/loginUser";
 import dotenv from 'dotenv';
 
 
@@ -18,6 +19,7 @@ const url = process.env.MONGO_URI
 mongoose.connect(url).then(res => console.log("Монго стоит"));
 
 app.use('/api/register', createUser);
+app.use('/api/login', loginUser);
 
 app.listen(port, () => {
     console.log(`App listening at http://localhost:${port}`)

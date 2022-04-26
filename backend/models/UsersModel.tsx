@@ -6,7 +6,7 @@ const UsersSchema = new Schema ({
     name: String,
     hashedPassword: String,
     telephone: {type: String, unique: true},
-    email: String,
+    email: {type: String, unique: true},
     favorites: [],
     basket: [],
     avatar: {type: String, default: "../../src/img/DefaultUserIcon.png"},

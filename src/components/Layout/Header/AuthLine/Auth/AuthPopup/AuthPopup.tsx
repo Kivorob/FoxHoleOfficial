@@ -6,7 +6,7 @@ const AuthPopup = () => {
 		<form action="#" className={style.container}>
 			<p className={style.title}>Вход</p>
 			<div className={style.input}>
-				<input type="text" id="login" placeholder="Email или номер телефона"/>
+				<input type="text" id="login" placeholder="Номер телефона"/>
 				<input type="password" id="password" placeholder="Пароль"/>
 				<button type="submit">Вход</button>
 			</div>
