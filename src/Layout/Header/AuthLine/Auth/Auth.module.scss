@@ -1,0 +1,15 @@
+.auth {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  p {
+    color: #a8a8a8;
+  }
+  a {
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      color: #ff7600;
+    }
+  }
+}
