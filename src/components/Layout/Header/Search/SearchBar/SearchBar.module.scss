@@ -1,0 +1,27 @@
+.container {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+  input {
+    background: #d9d9d9;
+    border-radius: 10px 0 0 10px;
+    font-weight: 600;
+    padding: 5px 10px;
+    width: 80%;
+    height: 45px;
+  }
+
+  button {
+    border-radius: 0 10px 10px 0;
+    background: #d56600;
+
+    &:hover {
+      background: #ff7600;
+    }
+
+    width: 20%;
+    height: 45px;
+  }
+}
