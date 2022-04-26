@@ -4,10 +4,8 @@ import style from './CallBack.module.scss';
 
 const CallBack = () => {
 	return (
-		<form id="CallBack" action="#" className={style.container}>
-			<div className={style.title}>
-				<p>Обратный звонок</p>
-			</div>
+		<form action="#" className={style.container}>
+			<p className={style.title}>Обратный звонок</p>
 			<p className={style.description}>Оставьте заявку, и наш оператор свяжется с Вами в режиме работы
 				интернет-магазина: с 10:00 до 19:00 с понедельника по пятницу.</p>
 			<div className={style.input}>

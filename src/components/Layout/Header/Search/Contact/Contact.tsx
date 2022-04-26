@@ -20,12 +20,12 @@ const Contact = () => {
 			<div className={style.contacts}>
 				<a href="tel:74232661414">+7 (423) 266-14-14</a>
 				<Popup
-				trigger={<button className={style.cb}>Обратный звонок</button>}
-				modal={true}
-				lockScroll={true}
-				nested={true}
-				contentStyle={contentStyle}
-				overlayStyle={overlayStyle}>
+					trigger={<button className={style.cb}>Обратный звонок</button>}
+					modal={true}
+					lockScroll={true}
+					nested={true}
+					contentStyle={contentStyle}
+					overlayStyle={overlayStyle}>
 					<CallBack/>
 				</Popup>
 			</div>
