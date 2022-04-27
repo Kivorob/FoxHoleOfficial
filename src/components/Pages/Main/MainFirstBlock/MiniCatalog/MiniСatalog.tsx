@@ -1,8 +1,8 @@
 import React from 'react';
-import style from './MiniKatalog.module.scss';
+import style from './MiniСatalog.module.scss';
 
 
-const MiniKatalog = () => {
+const MiniAtalog = () => {
 	return (
 		<section className={style.container}>
 			<div>
@@ -84,4 +84,4 @@ const MiniKatalog = () => {
 	);
 };
 
-export default MiniKatalog;
+export default MiniAtalog;

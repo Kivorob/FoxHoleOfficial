@@ -1,3 +1,71 @@
 .container {
+  position: relative;
+  grid-area: n;
+  width: 100%;
+  border-radius: 10px;
+  padding: 40px;
+  border: 1px solid #d5d5d5;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
 
+  .more {
+    cursor: pointer;
+    color: #d56600;
+    box-shadow: 0 -1px 3px #d5d5d5;
+    position: absolute;
+    background: #e5e5e5;
+    left: 40%;
+    bottom: -10px;
+    width: 150px;
+    text-align: center;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .main {
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: 50%;
+    }
+    div {
+      padding: 20px;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #fff;
+      background: #ff8e2d;
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+      }
+      .desc {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .date {
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+  .another {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

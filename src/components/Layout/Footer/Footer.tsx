@@ -4,12 +4,12 @@ import CopyRightLine from "./CopyRightLine/CopyRightLine";
 import style from "./Footer.module.scss"
 
 const Footer = () => {
-    return (
-        <div className={style.container}>
-            <InfoBar/>
-            <CopyRightLine/>
-        </div>
-    );
+	return (
+		<footer className={style.container}>
+			<InfoBar/>
+			<CopyRightLine/>
+		</footer>
+	);
 };
 
 export default Footer;

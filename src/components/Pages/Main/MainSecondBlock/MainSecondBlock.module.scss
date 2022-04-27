@@ -1,3 +1,12 @@
 .container {
-
+    margin-top: 40px;
+    width: 1200px;
+    height: 920px;
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    grid-template-areas:
+          "t v v"
+          "t n n";
 }

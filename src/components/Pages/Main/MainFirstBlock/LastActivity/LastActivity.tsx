@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './LastActivity.module.scss';
-import Name from "../Name/Name";
+import Name from "../../Items/Name/Name";
 
 
 const LastActivity = () => {

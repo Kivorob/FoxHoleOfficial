@@ -1,16 +1,16 @@
 import React from 'react';
 import style from './MainFirstBlock.module.scss';
-import MiniKatalog from "./MiniKatalog/MiniKatalog";
 import GameTypes from "./GameTypes/GameTypes";
 import Parametrs from "./Parametrs/Parametrs";
 import GamesNews from "./GamesNews/GamesNews";
 import DailyGame from "./DailyGame/DailyGame";
 import LastActivity from "./LastActivity/LastActivity";
+import MiniСatalog from "./MiniCatalog/MiniСatalog";
 
 const MainFirstBlock = () => {
 	return (
 		<div className={style.container}>
-			<MiniKatalog/>
+			<MiniСatalog/>
 			<GameTypes/>
 			<Parametrs/>
 			<GamesNews/>

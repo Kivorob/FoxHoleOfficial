@@ -1,41 +1,46 @@
 .container {
-    display: flex;
-    justify-content: center;
-    height: 150px;
-    border-top: 3px rgba(0, 0, 0, 0.64) solid;
-    background: lightgray;
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  border-top: 3px rgba(0, 0, 0, 0.64) solid;
+  background: lightgray;
 }
 
 .copyright {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100%;
-    width: 1200px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 1200px;
 }
+
 .item {
-    margin-left: 15px;
-    margin-top: 25px;
-    height: 110px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
+  margin-left: 15px;
+  margin-top: 25px;
+  height: 110px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
             "t t"
             "r1 r2";
-    .text {
-        grid-area: t;
-    }
-    .ref1 {
-         grid-area: r1;
-     }
-    .ref2 {
-        grid-area: r2;
-    }
+
+  .text {
+    grid-area: t;
+  }
+
+  .ref1 {
+    grid-area: r1;
+  }
+
+  .ref2 {
+    grid-area: r2;
+  }
 }
+
 .icon {
-    position: absolute;
-    right: 0;
+  position: absolute;
+  right: 0;
 }

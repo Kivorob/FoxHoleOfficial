@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './DailyGame.module.scss';
-import Name from "../Name/Name";
+import Name from "../../Items/Name/Name";
 
 
 const DailyGame = () => {
@@ -17,7 +17,7 @@ const DailyGame = () => {
 				</div>
 			</div>
 			<div className={style.btn}>
-				<button>
+				<button type="submit">
 					<p className={style.new}>Цена</p>
 					<p className={style.last}>старая цена</p>
 				</button>
