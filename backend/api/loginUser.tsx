@@ -10,8 +10,8 @@ dotenv.config()
 const router = express.Router()
 
 router.post('/', async (req, res) => {
-    const { login, password } = req.body;
-    Users.findOne({telephone: login}, async (err?: any, user?: any) => {
+    const { telephone, password } = req.body;
+    Users.findOne({telephone: telephone}, async (err?: any, user?: any) => {
         if (err) {
             res.status(500).send('Ошибка сервера');
         } else if (!user) {
@@ -20,7 +20,7 @@ router.post('/', async (req, res) => {
             const auth = await bcrypt.compare(password, user.hashedPassword)
             if (auth) {
                 const secret = process.env.TOKEN_SECRET;
-                const payload = {login};
+                const payload = {telephone};
                 // @ts-ignore
                 const token = jwt.sign(payload, secret, {'expiresIn': '12h'});
                 res.cookie('jwt', token, {'httpOnly': false}).status(200)
