@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background: #ff7600;
+}
+.bar {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    height: 100%;
+    width: 10%;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background: #ff8e2d;
+    }
+    span {
+      margin-left: 5px;
+    };
+    &:first-child {
+      width: 15%;
+    }
+  }
+}
