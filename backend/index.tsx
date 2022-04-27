@@ -4,6 +4,7 @@ import cors from 'cors';
 import createUser from "./api/createUser";
 import loginUser from "./api/loginUser";
 import dotenv from 'dotenv';
+import getUserFromToken from "./api/detUserFromToken"
 
 
 dotenv.config();
@@ -20,6 +21,7 @@ mongoose.connect(url).then(res => console.log("Монго стоит"));
 
 app.use('/api/register', createUser);
 app.use('/api/login', loginUser);
+app.use('/api/verify', getUserFromToken);
 
 app.listen(port, () => {
     console.log(`App listening at http://localhost:${port}`)

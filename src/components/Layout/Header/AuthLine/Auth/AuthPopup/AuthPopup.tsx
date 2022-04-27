@@ -9,10 +9,11 @@ async function loginUser(data?: any) {
 		headers: {
 			'Content-Type': 'application/json'
 		}
-	}).then((res => res.json))
+	}).then(res => res.json())
 }
 
 function AuthPopup ({auth, setAuthorised, user, setUser}: {auth?: any, setAuthorised?: any, user?: any, setUser?: any}) {
+
 	const handleSubmit = async (event?: any) => {
 		event.preventDefault();
 		console.log(event);
@@ -20,8 +21,7 @@ function AuthPopup ({auth, setAuthorised, user, setUser}: {auth?: any, setAuthor
 			telephone: event.target.elements.telephone.value,
 			password: event.target.elements.password.value
 		}
-		console.log(data);
-		let token: any;
+		let token;
 		token = await loginUser(data).catch(err => token = {token: 'error'});
 		if (token.token !== 'error') {
 			console.log(token);
@@ -31,7 +31,9 @@ function AuthPopup ({auth, setAuthorised, user, setUser}: {auth?: any, setAuthor
 			setUser(user);
 			localStorage.setItem('token', token.token);
 			console.log(localStorage.getItem("token"));
+			console.log(user)
 		}
+
 	}
 
 	return (
