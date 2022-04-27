@@ -1,0 +1,26 @@
+.container {
+  width: 150px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+    img {
+      width: 100%;
+      height: 180px;
+    }
+    div {
+      p {
+        height: 50px;
+        text-align: center;
+        display: inline-block;
+      }
+    }
+  &:hover {
+    div {
+      p {
+        text-decoration: underline;
+      }
+    }
+  }
+  }
