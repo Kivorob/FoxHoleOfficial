@@ -1,9 +1,10 @@
 .profile {
-    a {
-      color: #fff;
-      cursor: pointer;
-      &:hover {
-        color: #ff7600;
-      }
+  a {
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      color: #ff7600;
     }
+  }
 }

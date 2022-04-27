@@ -2,35 +2,34 @@
   margin-top: 20px;
   position: relative;
   grid-area: n;
-  width: 100%;
   border-radius: 10px;
   padding: 0 25px 25px 25px;
   border: 1px solid #d5d5d5;
   background: #fff;
+
   .content {
     padding: 40px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
   }
+
   .more {
-    cursor: pointer;
     box-shadow: 0 -1px 3px #d5d5d5;
     position: absolute;
     background: #e5e5e5;
     left: 40%;
     bottom: -10px;
     width: 150px;
-    text-align: center;
     height: 30px;
     border-radius: 10px;
     font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
+
     a, svg {
       color: #d56600;
+
       &:hover {
         text-decoration: underline;
       }

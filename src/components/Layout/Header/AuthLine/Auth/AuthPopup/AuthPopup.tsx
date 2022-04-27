@@ -12,8 +12,13 @@ async function loginUser(data?: any) {
 	}).then(res => res.json())
 }
 
-function AuthPopup ({auth, setAuthorised, user, setUser}: {auth?: any, setAuthorised?: any, user?: any, setUser?: any}) {
-
+function AuthPopup({
+					   auth,
+					   setAuthorised,
+					   user,
+					   setUser
+				   }: { auth?: any, setAuthorised?: any, user?: any, setUser?: any }) {
+	
 	const handleSubmit = async (event?: any) => {
 		event.preventDefault();
 		console.log(event);
@@ -33,9 +38,9 @@ function AuthPopup ({auth, setAuthorised, user, setUser}: {auth?: any, setAuthor
 			console.log(localStorage.getItem("token"));
 			console.log(user)
 		}
-
+		
 	}
-
+	
 	return (
 		<form onSubmit={handleSubmit} className={style.container}>
 			<p className={style.title}>Вход</p>

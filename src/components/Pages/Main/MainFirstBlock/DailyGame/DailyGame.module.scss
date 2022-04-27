@@ -2,37 +2,38 @@
   margin-top: 20px;
   position: relative;
   grid-area: d;
-  width: 100%;
   border-radius: 10px;
   padding: 40px 20px 20px;
   border: 1px solid #d5d5d5;
   background: #fff;
+
   .content {
     display: flex;
-    width: 100%;
     height: 200px;
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
+
     .desc {
       h1 {
         font-size: 24px;
         font-weight: 600;
       }
+
       p {
         margin-top: 15px;
-        display: inline-block;
       }
     }
-    .item {
-      img {
-        height: 180px;
-        width: 150px;
-      }
+
+    .item img {
+      height: 180px;
+      width: 150px;
     }
   }
+
   .btn {
     margin-top: 30px;
+
     button {
       display: flex;
       justify-content: space-between;
@@ -40,7 +41,9 @@
       height: 40px;
       width: 230px;
       background: #636363;
+      color: #fff;
       border-radius: 15px;
+
       .new {
         font-size: 20px;
         font-weight: 600;
@@ -51,10 +54,12 @@
         height: 100%;
         border-radius: 15px;
         background: #d56600;
+
         &:hover {
           background: #ff7600;
         }
       }
+
       .last {
         font-size: 14px;
         font-weight: 300;

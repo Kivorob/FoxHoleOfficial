@@ -4,11 +4,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
   a {
-    display: block;
     font-weight: 700;
   }
 }
+
 .cb {
   font-size: 14px;
   height: 40px;
@@ -16,6 +17,7 @@
   border-radius: 15px;
   font-weight: 600;
   background: #d56600;
+
   &:hover {
     background: #ff7600;
   }

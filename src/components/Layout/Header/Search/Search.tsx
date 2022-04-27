@@ -8,14 +8,14 @@ import Contact from "./Contact/Contact";
 
 const Search = () => {
 	return (
-		<div className={style.container}>
+		<section className={style.container}>
 			<div className={style.search}>
 				<Logo/>
 				<SearchBar/>
 				<Busket/>
 				<Contact/>
 			</div>
-		</div>
+		</section>
 	);
 };
 

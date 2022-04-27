@@ -4,10 +4,10 @@ import style from './HeaderLine.module.scss';
 
 const HeaderLine = () => {
 	return (
-		<div className={style.container}>
+		<section className={style.container}>
 			<img src="#" alt=""/>
 			<button>Подробнее</button>
-		</div>
+		</section>
 	);
 };
 

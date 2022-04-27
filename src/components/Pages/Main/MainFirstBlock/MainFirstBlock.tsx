@@ -5,18 +5,18 @@ import Parametrs from "./Parametrs/Parametrs";
 import GamesNews from "./GamesNews/GamesNews";
 import DailyGame from "./DailyGame/DailyGame";
 import LastActivity from "./LastActivity/LastActivity";
-import MiniСatalog from "./MiniCatalog/MiniСatalog";
+import MiniCatalog from "./MiniCatalog/MiniСatalog";
 
 const MainFirstBlock = () => {
 	return (
-		<div className={style.container}>
-			<MiniСatalog/>
+		<section className={style.container}>
+			<MiniCatalog/>
 			<GameTypes/>
 			<Parametrs/>
 			<GamesNews/>
 			<DailyGame/>
 			<LastActivity/>
-		</div>
+		</section>
 	);
 };
 

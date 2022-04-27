@@ -1,18 +1,14 @@
 .container {
   display: flex;
   justify-content: center;
-  height: 150px;
   border-top: 3px rgba(0, 0, 0, 0.64) solid;
-  background: lightgray;
+  background: #d3d3d3;
 }
 
 .copyright {
   position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
-  height: 100%;
   width: 1200px;
 }
 

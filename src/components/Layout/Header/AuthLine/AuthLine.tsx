@@ -5,7 +5,7 @@ import Profile from "./Profile/Profile";
 
 const AuthLine = () => {
 	return (
-		<div className={style.container}>
+		<section className={style.container}>
 			<div className={style.item}>
 				<div className={style.locate}>
 					<p>Адреса магазинов</p>
@@ -13,7 +13,7 @@ const AuthLine = () => {
 				<Auth/>
 				{/*<Profile/>*/}
 			</div>
-		</div>
+		</section>
 	);
 };
 

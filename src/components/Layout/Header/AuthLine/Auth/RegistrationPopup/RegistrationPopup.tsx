@@ -13,15 +13,20 @@ async function saveUser(data?: any) {
 }
 
 
-function RegistrationPopup ({auth, user, setUser, setAuthorised}: {auth?: any, user?: any, setAuthorised?: any, setUser?: any}) {
+function RegistrationPopup({
+							   auth,
+							   user,
+							   setUser,
+							   setAuthorised
+						   }: { auth?: any, user?: any, setAuthorised?: any, setUser?: any }) {
 	const onSubmit = async (event?: any) => {
-
+		
 		event.preventDefault();
 		const data = {
 			name: event.target.elements.name.value,
 			telephone: event.target.elements.telephone.value,
 			email: event.target.elements.email.value,
-			password : event.target.password.value
+			password: event.target.password.value
 		}
 		console.log(data);
 		let token;

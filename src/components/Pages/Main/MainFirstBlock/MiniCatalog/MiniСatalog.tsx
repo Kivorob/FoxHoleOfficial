@@ -2,7 +2,7 @@ import React from 'react';
 import style from './MiniСatalog.module.scss';
 
 
-const MiniAtalog = () => {
+const MiniCatalog = () => {
 	return (
 		<section className={style.container}>
 			<div>
@@ -84,4 +84,4 @@ const MiniAtalog = () => {
 	);
 };
 
-export default MiniAtalog;
+export default MiniCatalog;

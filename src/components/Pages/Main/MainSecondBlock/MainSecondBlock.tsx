@@ -7,11 +7,11 @@ import News from "./News/News";
 
 const MainSecondBlock = () => {
 	return (
-		<div className={style.container}>
+		<section className={style.container}>
 			<TopGames/>
 			<Videos/>
 			<News/>
-		</div>
+		</section>
 	);
 };
 

@@ -2,7 +2,6 @@
   margin-top: 20px;
   position: relative;
   grid-area: l;
-  width: 100%;
   border-radius: 10px;
   padding: 50px 10px 0 60px;
   border: 1px solid #d5d5d5;
@@ -11,6 +10,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+
   .line {
     position: absolute;
     left: 10%;
@@ -18,29 +18,33 @@
     height: 80%;
     border-left: 3px solid #ff8e2d;
   }
+
   .pointf, .points {
     position: absolute;
     border-radius: 50%;
     background: #ff8e2d;
     width: 11px;
     height: 11px;
-  }
-  .pointf {
     left: 9%;
+  }
+
+  .pointf {
     bottom: 80%;
   }
+
   .points {
-    left: 9%;
     bottom: 40%;
   }
+
   div {
     display: flex;
     justify-content: center;
     align-items: center;
+
     p {
       margin-left: 20px;
-      display: inline-block;
     }
+
     img {
       border-radius: 50%;
       width: 50px;

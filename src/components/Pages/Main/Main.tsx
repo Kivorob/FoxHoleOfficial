@@ -10,14 +10,14 @@ import Quality from "./Quality/Quality";
 
 const Main = () => {
 	return (
-		<div className={style.container}>
+		<main className={style.container}>
 			<ScrollBar/>
 			<MainFirstBlock/>
 			<MainSecondBlock/>
 			<Cards/>
 			<Description/>
 			<Quality/>
-		</div>
+		</main>
 	);
 };
 
