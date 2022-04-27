@@ -18,7 +18,7 @@ function AuthPopup ({auth, setAuthorised, user, setUser}: {auth?: any, setAuthor
 		event.preventDefault();
 		console.log(event);
 		const data = {
-			telephone: event.target.elements.telephone.value,
+			login: event.target.elements.login.value,
 			password: event.target.elements.password.value
 		}
 		let token;
@@ -40,7 +40,7 @@ function AuthPopup ({auth, setAuthorised, user, setUser}: {auth?: any, setAuthor
 		<form onSubmit={handleSubmit} className={style.container}>
 			<p className={style.title}>Вход</p>
 			<div className={style.input}>
-				<input type="text" id="telephone" placeholder="Номер телефона"/>
+				<input type="text" id="login" placeholder="Номер телефона"/>
 				<input type="password" id="password" placeholder="Пароль"/>
 				<button type="submit">Вход</button>
 			</div>

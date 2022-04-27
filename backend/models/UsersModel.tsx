@@ -3,6 +3,7 @@ import mongoose from "mongoose"
 const Schema = mongoose.Schema;
 
 const UsersSchema = new Schema ({
+    login: {type: String, unique: true},
     name: String,
     hashedPassword: String,
     telephone: {type: String, unique: true},
