@@ -1,3 +1,35 @@
 .container {
+  position: relative;
+  width: 700px;
+  height: 350px;
+  background: #fff;
 
+  &:not(:last-child) {
+    margin-right: 1em;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  a {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    height: 40px;
+    width: 140px;
+    border-radius: 15px;
+    font-weight: 600;
+    color: #fff;
+    background: #d56600;
+
+    &:hover {
+      background: #ff7600;
+    }
+  }
 }
