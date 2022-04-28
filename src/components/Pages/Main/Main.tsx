@@ -14,8 +14,8 @@ const Main = () => {
 			<ScrollBar/>
 			<MainFirstBlock/>
 			<MainSecondBlock/>
-			<Cards/>
 			<Description/>
+			<Cards/>
 			<Quality/>
 		</main>
 	);
