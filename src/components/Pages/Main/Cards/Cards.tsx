@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Cards.module.scss';
-import Card from "./Card/Card";
+import Card from "../../../Templates/Card/Card";
 
 
 const Cards = () => {

@@ -4,6 +4,7 @@ import Footer from "./components/Layout/Footer/Footer";
 import Header from "./components/Layout/Header/Header";
 import verifyUser from "./verifyUser";
 import Main from "./components/Pages/Main/Main";
+import Catalog from "./components/Pages/Catalog/Catalog";
 
 
 const defaultUser = {
@@ -48,7 +49,8 @@ function App() {
   return (
     <div>
         <Header/>
-        <Main/>
+        {/*<Main/>*/}
+        <Catalog title="Настольные игры"/>
         <Footer/>
     </div>
   );
